@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="section1_content1" xml:space="preserve">
+    <value>The Double Master’s Degree Programme goal is to form specialists in the field of Mechanical Engineering, to foster mobility of the students and academics, and to offer the students an international experience and exposure to both Ukrainian and Polish learning values.</value>
+  </data>
+  <data name="section1_content2" xml:space="preserve">
+    <value>The programme established cooperation in the area of student exchange offering students an opportunity to obtain two degrees in Mechanical Engineering according to the programs of both universities:</value>
+  </data>
+  <data name="section1_content3" xml:space="preserve">
+    <value>diploma of &lt;b&gt;Master of Science Engineer&lt;/b&gt; of PUT</value>
+  </data>
+  <data name="section1_content4" xml:space="preserve">
+    <value>diploma of &lt;b&gt;Master of Science in “Mechanical Engineering”&lt;/b&gt; of Igor Sikorsky KPI</value>
+  </data>
+  <data name="section1_content5" xml:space="preserve">
+    <value>Programme's History</value>
+  </data>
+  <data name="section1_content6" xml:space="preserve">
+    <value>&lt;li&gt;&lt;i&gt;April 6-7, 2017&lt;/i&gt; - signing an agreement of understanding - between Igor Sikorsky KPI and Poznan University of Technology during the meeting of Rectors of higher technical educational institutions of Ukraine and Poland&lt;/li&gt;
+            &lt;li&gt;&lt;i&gt;June 27, 2017&lt;/i&gt; - beginning the creation of the Double Master's Degree Programme&lt;/li&gt;
+            &lt;li&gt;&lt;i&gt;July 29, 2017&lt;/i&gt; - agreed the curricula of specialties&lt;/li&gt;
+            &lt;li&gt;&lt;i&gt;August 20, 2017&lt;/i&gt; - the Agreement and Regulations for the Programme are prepared&lt;/li&gt;
+            &lt;li&gt;&lt;i&gt;August 29, 2017&lt;/i&gt; - signing by the Rectors of Igor Sikorsky KPI and Poznan University of Technology agreements on the Double Master's Degree Programme at the Center for Culture and Arts (Kyiv)&lt;/li&gt;
+            &lt;li&gt;&lt;i&gt;February 17, 2018&lt;/i&gt; - the first five students of Double Master's Degree Programme travel to Poznan University of Technology to study Mechanical Engineering&lt;/li&gt;</value>
+  </data>
+  <data name="section1_title" xml:space="preserve">
+    <value>The Programme</value>
+  </data>
+  <data name="section2_content1" xml:space="preserve">
+    <value>&lt;b&gt;Igor Sikorsky KPI&lt;/b&gt; - One of the biggest Universities in Europe, found on 1896 November 25. Comprises of 19 faculties, 9 educational and scientific institutes, several scientific and research institutes and educational centers. It trains 25000 students, postgraduates, doctorates as well as foreign student from neighbouring and far abroad countries.</value>
+  </data>
+  <data name="section2_content2" xml:space="preserve">
+    <value>&lt;b&gt;Mechanical Engineering Institute&lt;/b&gt; - The partner of Double Master's Degree Programme</value>
+  </data>
+  <data name="section2_content3" xml:space="preserve">
+    <value>Together with Chemical-Technological is considered the oldest department in the University</value>
+  </data>
+  <data name="section2_content4" xml:space="preserve">
+    <value>&lt;li&gt;Students - 1228&lt;/li&gt;
+                &lt;li&gt;Chairs - 8&lt;/li&gt;
+                &lt;li&gt;Scientific Subdivisions - 4&lt;/li&gt;
+                &lt;li&gt;Specialities - 2&lt;/li&gt;
+                &lt;li&gt;Specializations - 15&lt;/li&gt;</value>
+  </data>
+  <data name="section2_content5" xml:space="preserve">
+    <value>Chairs of Mechanical Engineering Institute</value>
+  </data>
+  <data name="section2_title" xml:space="preserve">
+    <value>National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"</value>
+  </data>
+  <data name="section3_content1" xml:space="preserve">
+    <value>&lt;b&gt;Poznan University of technology&lt;/b&gt; - The best Polish Technical University, founded in 1919. It is a place for 20 000 students, PhD's, DSc's study on 10 faculties 100 specializations in 27 branches of science</value>
+  </data>
+  <data name="section3_content2" xml:space="preserve">
+    <value>&lt;b&gt;Faculty of Mechanical Engineering and Management&lt;/b&gt; - The partner of Double Master's Degree Programme</value>
+  </data>
+  <data name="section3_content3" xml:space="preserve">
+    <value>The oldest Faculty of Poznan University of Technology. It was at the roots of higher education in technical subjects in Wielkopolska Region. Currently, the Faculty consists of 4 institutes with 13 divisions and 1 chair.</value>
+  </data>
+  <data name="section3_content4" xml:space="preserve">
+    <value>Fields of study:</value>
+  </data>
+  <data name="section3_content5" xml:space="preserve">
+    <value>&lt;li&gt;Biomedical Engineering&lt;/li&gt;
+            &lt;li&gt;Materials Engineering&lt;/li&gt;
+            &lt;li&gt;Mechanical Engineering&lt;/li&gt;
+            &lt;li&gt;Mechatronics&lt;/li&gt;
+            &lt;li&gt;Management and Production Engineering&lt;/li&gt;</value>
+  </data>
+  <data name="section3_content6" xml:space="preserve">
+    <value>&lt;b&gt;Faculty of Machines and Transport&lt;/b&gt; - The partner of Double Master's Degree Programme</value>
+  </data>
+  <data name="section3_content7" xml:space="preserve">
+    <value>The Faculty was established on 1 October 1953. Comprises of 2 Institutes and 3 Chairs.</value>
+  </data>
+  <data name="section3_content8" xml:space="preserve">
+    <value>Fields of study:</value>
+  </data>
+  <data name="section3_content9" xml:space="preserve">
+    <value>&lt;li&gt;Mechanical Engineering&lt;/li&gt;
+            &lt;li&gt;Transport&lt;/li&gt;
+            &lt;li&gt;Aerospace Engineering&lt;/li&gt;</value>
+  </data>
+  <data name="section3_title" xml:space="preserve">
+    <value>Poznan University of Technology</value>
+  </data>
+  <data name="section4_step10_content1" xml:space="preserve">
+    <value>Undergo the defence of Master's thesis</value>
+  </data>
+  <data name="section4_step10_content2" xml:space="preserve">
+    <value>Obtain two diplomas:</value>
+  </data>
+  <data name="section4_step10_content3" xml:space="preserve">
+    <value>Master of Science Engineer</value>
+  </data>
+  <data name="section4_step10_content4" xml:space="preserve">
+    <value>Poznan University of Technology</value>
+  </data>
+  <data name="section4_step10_content5" xml:space="preserve">
+    <value>Master of Science in “Mechanical Engineering”</value>
+  </data>
+  <data name="section4_step10_content6" xml:space="preserve">
+    <value>Igor Sikorsky KPI</value>
+  </data>
+  <data name="section4_step10_title" xml:space="preserve">
+    <value>Step 10. Defence of Master's Thesis</value>
+  </data>
+  <data name="section4_step1_content" xml:space="preserve">
+    <value>&lt;span&gt;A successful candidate for Double Master's Degree Programme must satisfy the following requirements:&lt;/span&gt;
+                    &lt;ol&gt;
+                        &lt;li&gt;Must have diploma of 1st cycle of studies in Mechanical Engineering (Bachelor)&lt;/li&gt;
+                        &lt;li&gt;Be enrolled in the Master’s programme (second cycle)&lt;/li&gt;
+                        &lt;li&gt;Obtained B2 certificate of respective Language (English/Ukrainian/Polish)&lt;/li&gt;
+                        &lt;li&gt;Be appointed to a Supervisor – from the home University&lt;/li&gt;
+                        &lt;li&gt;Have a topic for Master’s thesis (approved by Reviewer)&lt;/li&gt;
+                    &lt;/ol&gt;</value>
+  </data>
+  <data name="section4_step1_title" xml:space="preserve">
+    <value>Step 1. Requirements for Candidates</value>
+  </data>
+  <data name="section4_step2_content1" xml:space="preserve">
+    <value>Start with the</value>
+  </data>
+  <data name="section4_step2_content2" xml:space="preserve">
+    <value>Web Application Form</value>
+  </data>
+  <data name="section4_step2_content3" xml:space="preserve">
+    <value>provided on this website</value>
+  </data>
+  <data name="section4_step2_content4" xml:space="preserve">
+    <value>Aplicant should provide a DD Programme Coordinator of the home University with the following:</value>
+  </data>
+  <data name="section4_step2_content5" xml:space="preserve">
+    <value>&lt;ol&gt;
+                        &lt;li&gt;Application Form (signed by hand)&lt;/li&gt;
+                        &lt;li&gt;Topic of master’s thesis&lt;/li&gt;
+                        &lt;li&gt;Information about a Scientific Supervisor (Reviewer) (scientific degree, academic title, name, phone, e-mail)&lt;/li&gt;
+                        &lt;li&gt;Bachelor's degree diploma scan (first cycle)&lt;/li&gt;
+                        &lt;li&gt;Scan of Supplement to Diploma (transcript of records)&lt;/li&gt;
+                    &lt;/ol&gt;</value>
+  </data>
+  <data name="section4_step2_title" xml:space="preserve">
+    <value>Step 2. Student’s admission to the DD Programme</value>
+  </data>
+  <data name="section4_step3_content1" xml:space="preserve">
+    <value>&lt;ul&gt;
+                        &lt;li&gt;A candidate is to be selected on the competitive basis of the home University and fulfil the requirements of the admission board of the faculty.&lt;/li&gt;
+                        &lt;li&gt;All students will be informed of the selection results by the Coordinator of the Programme&lt;/li&gt;
+                    &lt;/ul&gt;</value>
+  </data>
+  <data name="section4_step3_title" xml:space="preserve">
+    <value>Step 3. Assesment in home University (Candidates selection)</value>
+  </data>
+  <data name="section4_step4_content1" xml:space="preserve">
+    <value>A formal procedure of a selected candidate requires his registration in the on-line system</value>
+  </data>
+  <data name="section4_step4_content2" xml:space="preserve">
+    <value>, filling in on-line application form and uploading following documents:</value>
+  </data>
+  <data name="section4_step4_content3" xml:space="preserve">
+    <value>&lt;li&gt;Application Form&lt;/li&gt;
+                        &lt;li&gt;Passport scan&lt;/li&gt;
+                        &lt;li&gt;CV (optional)&lt;/li&gt;
+                        &lt;li&gt;Bachelor's degree diploma scan (first cycle) translated into English or Polish language (if the language of document is different one)&lt;/li&gt;
+                        &lt;li&gt;Bachelors' diploma - a photocopy legalized at the Polish Embassy/Consulate or Apostilled (for the moment of arrival to PUT)&lt;/li&gt;
+                        &lt;li&gt;Scan of Supplement to Diploma (transcript of records), translated into English or Polish language (if the language of document is different one)&lt;/li&gt;
+                        &lt;li&gt;Scan of corresponding B2 Language certificate&lt;/li&gt;
+                        &lt;li&gt;Recommendation from the graduate’s department (optional)&lt;/li&gt;</value>
+  </data>
+  <data name="section4_step4_content4" xml:space="preserve">
+    <value>A registration of a student to partner University (on-line system</value>
+  </data>
+  <data name="section4_step4_content5" xml:space="preserve">
+    <value>should be not later than the end of the 1st semester.</value>
+  </data>
+  <data name="section4_step4_title" xml:space="preserve">
+    <value>Step 4. Registration in KSANTYPA</value>
+  </data>
+  <data name="section4_step5_content1" xml:space="preserve">
+    <value>On the basis of received documents the host University will:</value>
+  </data>
+  <data name="section4_step5_content2" xml:space="preserve">
+    <value>&lt;li&gt;Verify the application documents&lt;/li&gt;
+                        &lt;li&gt;Register a candidate for the DD Programme&lt;/li&gt;
+                        &lt;li&gt;
+                            Provide a candidate for DD Programme with:
+                            &lt;ul&gt;
+                                &lt;li&gt;Invitation to study document&lt;/li&gt;
+                                &lt;li&gt;Contacts of faculty coordinator who is in charge of educational process&lt;/li&gt;
+                                &lt;li&gt;Together with the faculty coordinator appoints a Scientific Supervisor for Master thesis&lt;/li&gt;
+                                &lt;li&gt;List of subjects to cover the educational requirements&lt;/li&gt;
+                                &lt;li&gt;Agree the living conditions with the host University&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;</value>
+  </data>
+  <data name="section4_step5_title" xml:space="preserve">
+    <value>Step 5. Assesment in the host University</value>
+  </data>
+  <data name="section4_step6_content1" xml:space="preserve">
+    <value>After assessment in home and host Universities and recieving list of subjects, student must:</value>
+  </data>
+  <data name="section4_step6_content2" xml:space="preserve">
+    <value>&lt;li&gt;Fill-in (and send to the DD coordination center) the Learning Agreement with disciplines according to specified direction, approved by both institutions, with a detailed description of the syllabuses and competences to be acquired during a specified academic course, transcript of records from last semester(s) in home University, dates of arrival  to- and departure from- the host University&lt;/li&gt;
+                        &lt;li&gt;Contact with scientific Supervisor from host University&lt;/li&gt;
+                        &lt;li&gt;Apply for Visa in Embassy&lt;/li&gt;
+                        &lt;li&gt;Obtain document of medical examination&lt;/li&gt;</value>
+  </data>
+  <data name="section4_step6_title" xml:space="preserve">
+    <value>Step 6. After assessment in home and host Universities</value>
+  </data>
+  <data name="section4_step7_content1" xml:space="preserve">
+    <value>Requirements for all students who are willing to study abroad:</value>
+  </data>
+  <data name="section4_step7_content2" xml:space="preserve">
+    <value>Apply for study at the</value>
+  </data>
+  <data name="section4_step7_content3" xml:space="preserve">
+    <value>Academic Mobility Department</value>
+  </data>
+  <data name="section4_step7_content4" xml:space="preserve">
+    <value>&lt;li&gt;&lt;b&gt;Approve individual Curriculum at the home Faculty (with end dates for passing the exams)&lt;/b&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;b&gt;Approve the dates of departure and arrival to the home University&lt;/b&gt;&lt;/li&gt;</value>
+  </data>
+  <data name="section4_step7_title" xml:space="preserve">
+    <value>Step 7. Registration at the Students Mobility Office</value>
+  </data>
+  <data name="section4_step8_content1" xml:space="preserve">
+    <value>(Regulations 2.8) For enrolled students: Host institutions must provide pertinent pre-arrival information to students including information regarding travel and entry, costs likely to be incurred, and any other information which will assist students to prepare for their stay at the host institution.</value>
+  </data>
+  <data name="section4_step8_content2" xml:space="preserve">
+    <value>(Regulations 2.8) Student’s arrival to the host University: Host institution arranges and conducts a comprehensive on-site orientation program.</value>
+  </data>
+  <data name="section4_step8_content3" xml:space="preserve">
+    <value>By the end of studies in partner University students obtain transcript of records</value>
+  </data>
+  <data name="section4_step8_title" xml:space="preserve">
+    <value>Step 8. Travel and Study in partner University</value>
+  </data>
+  <data name="section4_step9_content1" xml:space="preserve">
+    <value>&lt;li&gt;
+                            Make sure to return to home University before the end date approved in documents before the departure.
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            Contact your Coordinator about the arrival
+                        &lt;/li&gt;</value>
+  </data>
+  <data name="section4_step9_content2" xml:space="preserve">
+    <value>Provide necessary documents to Dean's office and</value>
+  </data>
+  <data name="section4_step9_content3" xml:space="preserve">
+    <value>Academic Mobility Department</value>
+  </data>
+  <data name="section4_step9_title" xml:space="preserve">
+    <value>Step 9. Return to home University</value>
+  </data>
+  <data name="section4_title" xml:space="preserve">
+    <value>How Does The Programme Work ?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="section2_content6" xml:space="preserve">
+    <value>&lt;li&gt;Machine Dynamics and Strength of Materials&lt;/li&gt;
+&lt;li&gt;Mechanics of Material Plasticity and Resource Saving Processes&lt;/li&gt;
+&lt;li&gt;Applied Hydro-Aeromechanics and Mechatronics&lt;/li&gt;
+&lt;li&gt;Applied Mechanics&lt;/li&gt;
+&lt;li&gt;Design of Machine Tools and Machines&lt;/li&gt;
+&lt;li&gt;Integrated Mechanical Engineering&lt;/li&gt;
+&lt;li&gt;Laser Systems and Physical Technologies&lt;/li&gt;
+&lt;li&gt;Manufacturing Engineering&lt;/li&gt;</value>
+  </data>
+</root>

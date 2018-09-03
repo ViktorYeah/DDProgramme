@@ -1,0 +1,79 @@
+﻿@using System.Globalization;
+@using Microsoft.AspNetCore.Mvc
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    jQuery(document).ready(function () {
+        if ("@ViewData["Message"]" == "Registration in process") {
+            showModal();
+       }
+    });
+
+    function showModal() {
+        $("#buttonModal").click();
+    }
+</script>
+
+<!--Toggle Modal Window Button-->
+<button id="buttonModal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalWindow" hidden></button>
+
+<!--Modal Window (shows: registration is in progress)-->
+<div class="modal" id="modalWindow">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">@Localizer["modal_msg_title"]</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <span>@Localizer["modal_msg1"]</span>
+                <br />
+                <span>@Localizer["modal_msg2"]</span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">@Localizer["modal_msg_close"]</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Page's main Content-->
+<div class="section">
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron bg-light shadow rounded">
+                <h1 id="jumboTitle" class="display-3 pb-3">@Localizer["Title"]</h1>
+                <p class="lead">
+                    <ul class="lead pl-3">
+                        <li style="text-align:justify;">@Localizer["Bullets1"]</li>
+                        <li style="text-align:justify;">@Localizer["Bullets2"]</li>
+                        <li style="text-align:justify;">@Localizer["Bullets3"]</li>
+                        <li style="text-align:justify;">@Localizer["Bullets4"]</li>
+                        <li style="text-align:justify;">@Localizer["Bullets5"]</li>
+                        <li style="text-align:justify;">@Localizer["Bullets6"]</li>
+                    </ul>
+                </p>
+                <hr class="my-4">
+                <p style="word-wrap:hyphenate;">
+                    <i>
+                        @Localizer["NotaBene"]
+                        <a href="@Url.Action("About", "Home")#about_kpi" class="badge badge-dark">@Localizer["link_KPI"]</a> 
+                        (@Localizer["word_Ukraine"]) @Localizer["word_and"] 
+                        <a href="@Url.Action("About", "Home")#about_put" class="badge badge-dark">@Localizer["link_PUT"]</a> 
+                        (@Localizer["word_Poland"])
+                    </i>
+                </p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="@Url.Action("About", "Home")" role="button">
+                    @Localizer["btn_learnMore"]</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+

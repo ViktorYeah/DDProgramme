@@ -1,0 +1,122 @@
+﻿@using System.Globalization;
+@using Microsoft.AspNetCore.Mvc
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model DoubleMastersDegreeProgramme.ViewModels.RegisterViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@Localizer["Title"]</h2>
+
+<div style="color: gray">
+    <i>@Localizer["footnote_title1"] <a class="badge badge-secondary" href="@Url.Action("About", "Home")#about_how_it_works">@Localizer["footnote_title2"]</a> @Localizer["footnote_title3"]</i>
+</div>
+
+<div id="errorMessage"></div>
+
+<script type="text/javascript">
+    function checkPasswords() {
+        // 1. Check if passwords are equal
+        if (document.getElementById('inputPassword').value != document.getElementById('inputPasswordConfirm').value) {
+            document.getElementById('passwordsMessage').innerHTML = "@Localizer["password_match"]";
+            document.getElementById('submit').disabled = true;
+        }
+        // 2. Check if password have at least 6 characters
+        else if (document.getElementById('inputPassword').value.length < 6) {
+            document.getElementById('passwordsMessage').innerHTML = "@Localizer["password_length"]";
+            document.getElementById('submit').disabled = true;
+        }
+        // 3. Passwords are ok
+        else {
+            document.getElementById('passwordsMessage').innerHTML = "";
+            document.getElementById('submit').disabled = false;
+        }
+    }
+</script>
+<form method="post" asp-controller="Account" asp-action="Register">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly"></div>
+    <br />
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputFirstName" >@Localizer["input_fname"]</label>
+        <input name="model.FirstName" required type="text" class="form-control col-12 col-sm-9" id="inputFirstName" aria-describedby="firstNameHelp" placeholder="@Localizer["input_fname"]">
+        @*<small id="firstNameHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputMiddleName">@Localizer["input_mname"]</label>
+        <input name="model.MiddleName" type="text" class="form-control col-12 col-sm-9" id="inputMiddleName" aria-describedby="middleNameHelp" placeholder="@Localizer["input_mname"]">
+        @*<small id="middleNameHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputLastName">@Localizer["input_lname"]</label>
+        <input name="model.LastName" required type="text" class="form-control col-12 col-sm-9" id="inputLastName" aria-describedby="lastNameHelp" placeholder="@Localizer["input_lname"]">
+        @*<small id="lastNameHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputBirthDate">@Localizer["input_birthdate"]</label>
+        <input name="model.BirthDate" required type="date" class="form-control col-12 col-sm-9" id="inputBirthDate" aria-describedby="birthDateHelp" placeholder="@Localizer["input_birthdate"]">
+        @*<small id="birthDateHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputEmail">@Localizer["input_email"]</label>
+        <input name="model.Email" required type="email" class="form-control col-12 col-sm-9" id="inputEmail" aria-describedby="emailHelp" placeholder="@Localizer["input_email"]">
+        @*<small id="emailHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputPhone">@Localizer["input_phone"]</label>
+        <input name="model.PhoneNumber" required type="tel" class="form-control col-12 col-sm-9" id="inputPhoneNumber" aria-describedby="phoneNumberHelp" placeholder="@Localizer["input_phone"]">
+        @*<small id="phoneNumberHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="genderSelect">@Localizer["input_gender"]</label>
+        <select name="model.Gender" typeof="Genders" required class="form-control col-12 col-sm-9" id="genderSelect">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        @*<small id="genderHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputDepartment">@Localizer["input_department"]</label>
+        <input name="model.Department" required type="text" class="form-control col-12 col-sm-9" id="inputDepartment" aria-describedby="departmentHelp" placeholder="@Localizer["input_department"]">
+        @*<small id="departmentHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputChair">@Localizer["input_chair"]</label>
+        <input name="model.Chair" required type="text" class="form-control col-12 col-sm-9" id="inputChair" aria-describedby="chairHelp" placeholder="@Localizer["input_chair"]">
+        @*<small id="chairHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputGroup">@Localizer["input_group"]</label>
+        <input name="model.Group" required type="text" class="form-control col-12 col-sm-9" id="inputGroup" aria-describedby="groupHelp" placeholder="@Localizer["input_group"]">
+        @*<small id="groupHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputScientificSupervisor">@Localizer["input_supervisor"]</label>
+        <input name="model.ScientificSupervisor" type="text" class="form-control col-12 col-sm-9" id="inputScientificSupervisor" aria-describedby="scientificSupervisorHelp" placeholder="@Localizer["input_supervisor"]">
+        @*<small id="scientificSupervisorHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputMastersProjectTitle">@Localizer["input_projecttitle"]</label>
+        <input name="model.MastersProjectTitle" type="text" class="form-control col-12 col-sm-9" id="inputMastersProjectTitle" aria-describedby="mastersProjectTitleHelp" placeholder="@Localizer["input_projecttitle"]">
+        @*<small id="mastersProjectTitleHelp" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputPassword">@Localizer["input_password"]</label>
+        <input name="model.Password" required type="password" class="form-control col-12 col-sm-9" id="inputPassword" placeholder="@Localizer["input_password"]" oninput="checkPasswords()">
+        @*<small id="inputPasswordConfirm" class=" offset-3"> </small>*@
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputPasswordConfirm">@Localizer["input_passwordrepeat"]</label>
+        <input name="model.PasswordConfirm" required type="password" class="form-control col-12 col-sm-9" id="inputPasswordConfirm" placeholder="@Localizer["input_passwordrepeat"]" oninput="checkPasswords()">
+        @*<small id="inputPasswordConfirm" class=" offset-3"> </small>*@
+    </div>
+    <div class="row">
+        <label class="col-12 col-sm-3" for="passwordsMessage"></label>
+        <label class=" pl-0 " id="passwordsMessage" style="color:red"></label>
+    </div>
+    <input type="submit" id="submit" class="btn btn-primary" value="@Localizer["button_submit"]" disabled />
+</form>
+
+
+

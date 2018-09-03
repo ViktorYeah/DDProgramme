@@ -1,0 +1,22 @@
+﻿@model IEnumerable<DoubleMastersDegreeProgramme.Models.User>
+@{
+
+    ViewData["Title"] = "List of Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@ViewData["Title"]</h2>
+
+<!--Show list of users to assign roles-->
+
+<table class="table">
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Email</td>
+            <td>
+                <a class="btn btn-sm btn-primary" asp-action="Edit" asp-route-userid="@user.Id">Access Permissions</a>
+            </td>
+        </tr>
+    }
+</table>

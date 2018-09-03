@@ -1,0 +1,227 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.AspNetCore.Http
+@inject IViewLocalizer Localizer
+@using DoubleMastersDegreeProgramme.Models
+@model DoubleMastersDegreeProgramme.ViewModels.EditUserViewModel
+@{
+
+    ViewData["Title"] = "Edit Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- User Profile Page-->
+
+@if (Model != null)
+{
+    <!--Name & Photo-->
+    <div class="row pt-4">
+        <form asp-action="UpdateAvatar" asp-controller="Account" id="updateAvatarForm" method="post" enctype="multipart/form-data" class="ml-3">
+            <input type="hidden" name="model.UserName" value="@Model.UserName" />
+            <script>
+                /* sets new profile-avatar from window-dialog menu result*/
+                $(function () {
+                    $('#avatarUpload').change(function () {
+                        var input = this;
+                        var url = $(this).val();
+                        var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+                        if (input.files && input.files[0] && (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")) {
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                $('#avatarImage').attr('src', e.target.result);
+                            }
+                            reader.readAsDataURL(input.files[0]);
+                            $('#updateAvatarForm').submit();
+                        }
+                        else {
+                            $('#avatarImage').attr('src', '~/images/default_profile_avatar.jpg');
+                        }
+                    });
+                });
+            </script>
+
+            <!--Profile avatar container-->
+            <div data-toggle="collapse" data-target="#avatarPicker" id="avatarContainer" class="rounded pr-0 mr-0" style="float:left; z-index: 100; width: 150px; height:150px;">
+                <div id="avatarPicker" class="collapse ">
+                    <input id="avatarUpload" style="width: 120px;" class="file pl-0" name="model.Avatar" type="file" value="" hidden>
+                    <label for="avatarUpload" class="btn btn-primary m-0 pl-0 pb-0" style="width:120px; height:40px; text-align:center;">@Localizer["input_avatar"]</label>
+                </div>
+                @if (Model.Avatar != null)
+                {
+                    <img class="shadow " id="avatarImage" style='width:120px; height:120px; z-index:999;' src="data:image/jpeg;base64,@(Convert.ToBase64String(Model.Avatar))" />
+                }
+                else
+                {
+                    <img class="shadow " id="avatarImage" src="~/images/default_profile_avatar.jpg" alt="Photo" style="width:120px; height:120px; z-index:999;" />
+                }
+            </div>
+
+            <!--Profile brief info-->
+            <div id="profileTopInfo" class="flex-fill" style="text-align:left; word-wrap:break-word;">
+                <span class="titleFont" style=""><b>@Model.FirstName</b></span>
+                <span class="titleFont" style=""><b>@Model.LastName</b></span>
+                <br />
+                <span>@Model.Department</span> <br />
+                <span>@Model.Chair</span> <br />
+                <span>@Model.Group</span>
+            </div>
+        </form>
+    </div>
+
+    <div class="">
+        <br />
+        <!-- Nav menu tabs -->
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item nav-item-custom2 col-12 col-md-4 pl-0 pr-0">
+                <a class="nav-link active" data-toggle="tab" href="#status" style="text-align:center;">@Localizer["Status"]</a>
+            </li>
+            <li class="nav-item nav-item-custom2 col-12 col-md-4 pl-0 pr-0">
+                <a class="nav-link " data-toggle="tab" href="#personalInfo" style="text-align:center;">@Localizer["PersonalInfo"]</a>
+            </li>
+            <li class="nav-item nav-item-custom2 col-12 col-md-4 pl-0 pr-0">
+                <a class="nav-link" data-toggle="tab" href="#changePassword" style="text-align:center;">@Localizer["ChangePassword"]</a>
+            </li>
+        </ul>
+        <hr />
+
+        <!-- Tabs -->
+        <div class="tab-content">
+            <!--Status-->
+            <div id="status" class="container tab-pane active">
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_01" class="col-12 col-md-5">@Localizer["status_01"]:</label>
+                    <input id="status_01" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_02" class="col-12 col-md-5">@Localizer["status_02"]:</label>
+                    <input id="status_02" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_03" class="col-12 col-md-5">@Localizer["status_03"]:</label>
+                    <input id="status_03" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_04" class="col-12 col-md-5">@Localizer["status_04"]:</label>
+                    <input id="status_04" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_05" class="col-12 col-md-5">@Localizer["status_05"]:</label>
+                    <input id="status_05" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_06" class="col-12 col-md-5">@Localizer["status_06"]:</label>
+                    <input id="status_06" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_07" class="col-12 col-md-5">@Localizer["status_07"]:</label>
+                    <input id="status_07" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_08" class="col-12 col-md-5">@Localizer["status_08"]:</label>
+                    <input id="status_08" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_09" class="col-12 col-md-5">@Localizer["status_09"]:</label>
+                    <input id="status_09" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_10" class="col-12 col-md-5">@Localizer["status_10"]:</label>
+                    <div id="status_10" class="form-control col-12 col-md-7">N/A</div>
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_11" class="col-12 col-md-5">@Localizer["status_11"]:</label>
+                    <input id="status_11" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+                <div class="form-group row" id="inputBlock">
+                    <label for="status_12" class="col-12 col-md-5">@Localizer["status_12"]:</label>
+                    <input id="status_12" class="form-control col-12 col-md-7" value="N/A" />
+                </div>
+            </div>
+            
+            <!--Personal Info-->
+            <div id="personalInfo" class="container tab-pane">
+                <form asp-action="Update" asp-controller="Account" id="updateForm">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputFirstName">@Localizer["input_fname"]</label>
+                        <input name="model.FirstName" value="@Model.FirstName" required type="text" class="form-control col-12 col-md-9" id="inputFirstName" aria-describedby="firstNameHelp" placeholder="@Localizer["input_fname"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputMiddleName">@Localizer["input_mname"]</label>
+                        <input name="model.MiddleName" value="@Model.MiddleName" type="text" class="form-control col-12 col-md-9" id="inputMiddleName" aria-describedby="middleNameHelp" placeholder="@Localizer["input_mname"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputLastName">@Localizer["input_lname"]</label>
+                        <input name="model.LastName" value="@Model.LastName" required type="text" class="form-control col-12 col-md-9" id="inputLastName" aria-describedby="lastNameHelp" placeholder="@Localizer["input_lname"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputBirthDate">@Localizer["input_birthdate"]</label>
+                        @{String modelDate = Model.BirthDate.ToShortDateString().ToString();}
+                        <input name="model.BirthDate" value="@modelDate" required type="date" class="form-control col-12 col-md-9" id="inputBirthDate" aria-describedby="birthDateHelp" placeholder="@Localizer["input_birthdate"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputEmail">@Localizer["input_email"]</label>
+                        <input name="model.Email" value="@Model.Email" required type="email" class="form-control col-12 col-md-9" id="inputEmail" aria-describedby="emailHelp" placeholder="@Localizer["input_email"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputPhone">@Localizer["input_phone"]</label>
+                        <input name="model.PhoneNumber" value="@Model.PhoneNumber" required type="tel" class="form-control col-12 col-md-9" id="inputPhoneNumber" aria-describedby="phoneNumberHelp" placeholder="@Localizer["input_phone"]">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-12 col-md-3" for="genderSelect">@Localizer["input_gender"]</label>
+                        <select name="model.Gender" value="@Model.Gender" typeof="Genders" required class="form-control col-12 col-md-9" id="genderSelect">
+                            @if (Model.Gender == Genders.Male)
+                            {
+                                <option>Male</option>
+                                <option>Female</option>
+                            }
+                            else
+                            {
+                                <option>Female</option>
+                                <option>Male</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputDepartment">@Localizer["input_department"]</label>
+                        <input name="model.Department" value="@Model.Department" required type="text" class="form-control col-12 col-md-9" id="inputDepartment" aria-describedby="departmentHelp" placeholder="@Localizer["input_department"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputChair">@Localizer["input_chair"]</label>
+                        <input name="model.Chair" value="@Model.Chair" required type="text" class="form-control col-12 col-md-9" id="inputChair" aria-describedby="chairHelp" placeholder="@Localizer["input_chair"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputGroup">@Localizer["input_group"]</label>
+                        <input name="model.Group" value="@Model.Group" required type="text" class="form-control col-12 col-md-9" id="inputGroup" aria-describedby="groupHelp" placeholder="@Localizer["input_group"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputScientificSupervisor">@Localizer["input_supervisor"]</label>
+                        <input name="model.ScientificSupervisor" value="@Model.ScientificSupervisor" type="text" class="form-control col-12 col-md-9" id="inputScientificSupervisor" aria-describedby="scientificSupervisorHelp" placeholder="@Localizer["input_supervisor"]">
+                    </div>
+                    <div class="form-group row" id="inputBlock">
+                        <label class="col-12 col-md-3" for="inputMastersProjectTitle">@Localizer["input_projecttitle"]</label>
+                        <input name="model.MastersProjectTitle" value="@Model.MastersProjectTitle" type="text" class="form-control col-12 col-md-9" id="inputMastersProjectTitle" aria-describedby="mastersProjectTitleHelp" placeholder="@Localizer["input_projecttitle"]">
+                    </div>
+                    <input type="hidden" name="model.UserName" value="@Model.UserName" />
+                    <button type="submit" class="btn btn-primary ">@Localizer["btn_update"]</button>
+                </form>
+                <br />
+            </div>
+            
+            <!--Change Password-->
+            <div id="changePassword" class="container tab-pane">
+                @{
+                    await Html.RenderPartialAsync("_ChangePassword", new DoubleMastersDegreeProgramme.ViewModels.ChangePasswordViewModel { Id = Model.Id, Email = Model.Email });
+                }
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <br />
+    <h2 class="aldrich">@ViewData["Title"]</h2>
+    <br />
+    <div>@Localizer["profile_notfound"]</div>
+}
+
+

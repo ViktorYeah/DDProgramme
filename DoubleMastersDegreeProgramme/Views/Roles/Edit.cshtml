@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model DoubleMastersDegreeProgramme.ViewModels.ChangeRoleViewModel
+@{
+
+    ViewData["Title"] = "Change roles for user " + Model.UserEmail;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@ViewData["Title"]</h2>
+
+<!--Assign roles to chosen user-->
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="userId" value="@Model.UserId" />
+    <div class="form-group">
+        @foreach (IdentityRole role in Model.AllRoles)
+        {
+            <input type="checkbox" name="roles" value="@role.Name"
+                   @(Model.UserRoles.Contains(role.Name) ? "checked=\"checked\"" : "") /> @role.Name <br />
+            }
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+

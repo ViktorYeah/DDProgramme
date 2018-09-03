@@ -1,0 +1,97 @@
+﻿html, body {
+    height: 100%;
+    width: 100%;
+    min-width: 340px; 
+    width: auto !important; 
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../../images/background.jpg");
+}
+
+#navBar {
+    position: fixed !important;
+}
+
+.nav-item-custom {
+    background: rgba(255,255,255, 0);
+    border-radius: 5px;
+}
+
+.nav-item-custom:hover {
+    background: rgb(0, 123, 255);
+    /*linear-gradient( 145deg, rgba(0,0,0,0) 10%, rgba(255,255,255,0.5) );*/
+    transition: background 0.2s ease-in-out;
+}
+
+.university_logo {
+    height: 37px;
+    width: auto;
+}
+
+.brand {
+    font-size: 17px;
+    color: aqua;
+}
+
+.brand, span, .aldrich {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleFont {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.navbar-nav {
+    width: 100%
+}
+
+.nav_pane {
+    background: rgba(255,255,255, 0.9);
+}
+
+.menu {
+    font-size: 12px;
+    color: white;
+}
+
+.navmenu {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.menu-block:hover {
+    background: #ff0000;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.section {
+    margin-top: 7em;
+}
+
+.data_container {
+    box-shadow: rgb(128, 128, 128) 3px 3px;
+}
+
+.logo {
+    font-size: 16px;
+}
+
+@media (max-width: 479px) {
+    .logo {
+        font-size: 9px;
+    }
+
+    #jumboTitle {
+        font-size: 30px;
+    }
+
+    #inputBlock {
+        display: block;
+    }
+}
+
+/*--- ---*/

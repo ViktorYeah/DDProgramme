@@ -1,0 +1,40 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model DoubleMastersDegreeProgramme.ViewModels.LoginViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@Localizer["Title"]</h2>
+
+@if (ViewData["Message"] != null)
+{
+    <br />
+    <div class="alert-danger rounded" style="text-align:center">
+        <span>@ViewData["Message"]</span>
+    </div>
+    <br />
+}
+
+<form method="post" class="pr-3" asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
+    @Html.AntiForgeryToken()
+    <br />
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputEmail">@Localizer["Email"]</label><br />
+        <input type="text" class="form-control col-12 col-sm-9" name="model.Email" />
+    </div>
+    <div class="form-group row" id="inputBlock">
+        <label class="col-12 col-sm-3" for="inputPassword">@Localizer["Password"]</label><br />
+        <input type="password" class="form-control col-12 col-sm-9" name="model.Password" />
+    </div>
+    <div class="form-group row" >
+        <label class="col-8 col-sm-3" for="inputRememberMe">@Localizer["RememberMe"]</label><br />
+        <input class="custom-checkbox" id="inputRememberMe" type="checkbox" value="true" name="model.RememberMe" />
+        <input type="hidden" value="false" name="model.RememberMe" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">@Localizer["Submit"]</button>
+</form>
+
+
+

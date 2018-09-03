@@ -1,0 +1,35 @@
+﻿@model IEnumerable<DoubleMastersDegreeProgramme.Models.User>
+@{
+    ViewData["Title"] = "List of Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@ViewData["Title"]</h2>
+
+<!--Display all users from Database & with Edit / Delete Profile options-->
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Email</th>
+        <th>Birth Date</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.Id</td>
+            <td>@user.Email</td>
+            <td>@user.BirthDate.ToShortDateString()</td>
+            <td>
+                <form asp-action="Delete" asp-route-id="@user.Id" method="post">
+                    <a href=@Url.Action("Edit", "Account", new { name = user.UserName }) class="btn btn-sm btn-primary">Edit</a>
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>

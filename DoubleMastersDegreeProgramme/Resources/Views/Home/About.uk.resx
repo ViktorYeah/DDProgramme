@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="section1_content1" xml:space="preserve">
+    <value>Метою Програми подвійного диплому магістра є формування фахівців у галузі машинобудування, сприяння мобільності студентів та науковців, запропонувати студентам міжнародний досвід та заохочити молодь до українських, та польських цінностей.</value>
+  </data>
+  <data name="section1_content2" xml:space="preserve">
+    <value>Програма встановлює співпрацю у сфері обміну студентами, що дає студентам можливість отримати два дипломи в галузі машинобудування за програмами обох університетів:</value>
+  </data>
+  <data name="section1_content3" xml:space="preserve">
+    <value>диплом &lt;b&gt;Master of Science Engineer&lt;/b&gt; Познанського Університету Технологій</value>
+  </data>
+  <data name="section1_content4" xml:space="preserve">
+    <value>диплом &lt;b&gt;Master of Science in “Mechanical Engineering”&lt;/b&gt; КПІ ім. Ігоря Сікорського</value>
+  </data>
+  <data name="section1_content5" xml:space="preserve">
+    <value>Історія Програми</value>
+  </data>
+  <data name="section1_content6" xml:space="preserve">
+    <value>&lt;li&gt; &lt;i&gt; 6-7 квітня 2017 р. &lt;/i&gt; - Підписання угоди про взаєморозуміння між КПІ ім. Ігоря Сікорського та Познанським Університетом Технологій під час зустрічі ректорів вищих технічних навчальних закладів України та Польщі &lt;/ li&gt;
+&lt;li&gt; &lt;i&gt; 27 червня 2017 р. &lt;/i&gt; - Початок створення Програми подвійного диплому магістра&lt;/ li&gt;
+&lt;li&gt; &lt;i&gt; 29 липня 2017 р.&lt;/i&gt; - Узгоджено навчальні плани спеціальностей &lt;/ li&gt;
+&lt;li&gt; &lt;i&gt; 20 серпня 2017 р.&lt;/i&gt; - Підготовлено Угоду та Положення про Програму &lt;/ li&gt;
+&lt;li&gt; &lt;i&gt; 29 серпня 2017 р. &lt;/i&gt; - Підписання ректорами КПІ ім. Ігоря Сікорського та Познанським Університетом Технологій угоди про стоврення Програми подвійного диплому магістра в Центрі культури та мистецтв (Київ) &lt;/ li&gt;
+&lt;li&gt; &lt;i&gt; 17 лютого 2018 р. &lt;/i&gt; - Перші п'ять студентів Програми подвійного диплому магістра подорожують до Познанського університету технологій  на навчання&lt;/ li&gt;</value>
+  </data>
+  <data name="section1_title" xml:space="preserve">
+    <value>Про Програму</value>
+  </data>
+  <data name="section2_content1" xml:space="preserve">
+    <value>&lt;b&gt;КПІ ім. Ігоря Сікорського&lt;/b&gt; - Один з найбільших університетів Європи, заснований 25 листопада 1896 року. Складається з 19 факультетів, 9 навчальних та наукових інститутів, декількох науково-дослідних інститутів та освітніх центрів. Приймає щорічно 25000 студентів, аспірантів, докторів наук, а також іноземних студентів з сусідніх країн.</value>
+  </data>
+  <data name="section2_content2" xml:space="preserve">
+    <value>&lt;b&gt;Механіко-машинобудівний інститут&lt;/b&gt; - Партнер Програми подвійного диплому магістра</value>
+  </data>
+  <data name="section2_content3" xml:space="preserve">
+    <value>Разом з Хіміко-технологічним факультетом вважається найстаршим в університеті</value>
+  </data>
+  <data name="section2_content4" xml:space="preserve">
+    <value>                &lt;li&gt;Студентів - 1228&lt;/li&gt;
+                &lt;li&gt;Кафедр - 8&lt;/li&gt;
+                &lt;li&gt;Наукових підрозділів - 4&lt;/li&gt;
+                &lt;li&gt;Спеціальностей - 2&lt;/li&gt;
+                &lt;li&gt;Спеціалізацій - 15&lt;/li&gt;</value>
+  </data>
+  <data name="section2_content5" xml:space="preserve">
+    <value>Кафедри Механіко-машинобудівного інституту</value>
+  </data>
+  <data name="section2_content6" xml:space="preserve">
+    <value>&lt;li&gt;Динаміки і мiцностi машин та опору матерiалiв - ДММОМ&lt;/li&gt;
+&lt;li&gt;Інтегрованих технологій машинобудування - ІТМ&lt;/li&gt;
+&lt;li&gt;Технології машинобудування - ТМММІ&lt;/li&gt;
+&lt;li&gt;Механіки пластичності матеріалів та ресурсозберігаючих процесів - МПМРП&lt;/li&gt;
+&lt;li&gt;Конструювання верстатів i машин - КВМ&lt;/li&gt;
+&lt;li&gt;Прикладної гідроаеромеханіки і механотроніки - ПГМ&lt;/li&gt;
+&lt;li&gt;Прикладної механіки - ПМ&lt;/li&gt;
+&lt;li&gt;Лазерної техніки та фізико-технічних технологій - ЛТФТТ&lt;/li&gt;
+&lt;li&gt;Приладів та систем керування літальними апаратами - ПСКЛА&lt;/li&gt;</value>
+  </data>
+  <data name="section2_title" xml:space="preserve">
+    <value>Національний технічний університет України "Київський політехнічний інститут імені Ігоря Сікорського"</value>
+  </data>
+  <data name="section3_content1" xml:space="preserve">
+    <value>&lt;b&gt; Познанський університет технологій &lt;/b&gt; - Найкращий технічний університет Польщі, заснований у 1919 році. Є місцем навчання для 20 000 студентів, докторів наук, на 10 факультетах 100 спеціалізацій у 27 галузях науки</value>
+  </data>
+  <data name="section3_content2" xml:space="preserve">
+    <value>&lt;b&gt; Факультет машинобудування та менеджменту &lt;/b&gt; - Партнер Програми подвійного диплому магістра</value>
+  </data>
+  <data name="section3_content3" xml:space="preserve">
+    <value>Найстарший факультет Познаньського університету технологій. Складав основу вищої освіти технічних дисциплін у Великопольській області. В даний час факультет складається з 4 інститутів з 13 підрозділами та 1 кафедри.</value>
+  </data>
+  <data name="section3_content4" xml:space="preserve">
+    <value>Напрямки навчання:</value>
+  </data>
+  <data name="section3_content5" xml:space="preserve">
+    <value>&lt;li&gt; Біомедична інженерія &lt;/li&gt;
+&lt;li&gt; Інжиніринг матеріалів &lt;/li&gt;
+&lt;li&gt; Машинобудування &lt;/li&gt;
+&lt;li&gt; Мехатроніка &lt;/li&gt;
+&lt;li&gt; Управління та виробнича інженерія &lt;/li&gt;</value>
+  </data>
+  <data name="section3_content6" xml:space="preserve">
+    <value>&lt;b&gt; Факультет машинобудування та транспорту &lt;/b&gt; - Партнер Програми подвійного диплому магістра</value>
+  </data>
+  <data name="section3_content7" xml:space="preserve">
+    <value>Факультет був заснований 1 жовтня 1953 року. До складу навчального закладу входять 2 інститути та 3 кафедри.</value>
+  </data>
+  <data name="section3_content8" xml:space="preserve">
+    <value>Напрямки навчання:</value>
+  </data>
+  <data name="section3_content9" xml:space="preserve">
+    <value>&lt;li&gt; Машинобудування &lt;/li&gt;
+&lt;li&gt; Транспорт &lt;/li&gt;
+&lt;li&gt; Аерокосмічна інженерія &lt;/li&gt;</value>
+  </data>
+  <data name="section3_title" xml:space="preserve">
+    <value>Познанський університет технологій</value>
+  </data>
+  <data name="section4_step10_content1" xml:space="preserve">
+    <value>Пройти захист магістерської дисертації</value>
+  </data>
+  <data name="section4_step10_content2" xml:space="preserve">
+    <value>Отримати два дипломи</value>
+  </data>
+  <data name="section4_step10_content3" xml:space="preserve">
+    <value>Master of Science Engineer</value>
+  </data>
+  <data name="section4_step10_content4" xml:space="preserve">
+    <value>Познанський університет технологій</value>
+  </data>
+  <data name="section4_step10_content5" xml:space="preserve">
+    <value>Master of Science in “Mechanical Engineering”</value>
+  </data>
+  <data name="section4_step10_content6" xml:space="preserve">
+    <value>КПІ ім. Ігоря Сікорського</value>
+  </data>
+  <data name="section4_step10_title" xml:space="preserve">
+    <value>Крок 10. Захист магістерської роботи</value>
+  </data>
+  <data name="section4_step1_content" xml:space="preserve">
+    <value>&lt;span&gt; Успішний кандидат Програми подвійного диплому магістра повинен відповідати наступним вимогам: &lt;/ span&gt;
+                     &lt;ol&gt;
+                         &lt;li&gt; Має диплом першого циклу навчання в галузі машинобудування (бакалавр) &lt;/li&gt;
+                         &lt;li&gt; Зарахований до 1-го року навчання в магістратурі (другий цикл навчання) &lt;/li&gt;
+                         &lt;li&gt; Отримав сертифікат B2 відповідної мови (англійська / українська / польська) &lt;/li&gt;
+                         &lt;li&gt; Призначений до наукового керівника - в домашньому університету &lt;/li&gt;
+                         &lt;li&gt; Має тему дипломної роботи магістра (затверджена рецензентом) &lt;/li&gt;
+                     &lt;/ ol&gt;</value>
+  </data>
+  <data name="section4_step1_title" xml:space="preserve">
+    <value>Крок 1. Вимоги до кандидатів</value>
+  </data>
+  <data name="section4_step2_content1" xml:space="preserve">
+    <value>Для початку необхідно зареєструватися через </value>
+  </data>
+  <data name="section4_step2_content2" xml:space="preserve">
+    <value>Веб-форму</value>
+  </data>
+  <data name="section4_step2_content3" xml:space="preserve">
+    <value>надану на цьому веб-сайті</value>
+  </data>
+  <data name="section4_step2_content4" xml:space="preserve">
+    <value>Заявник повинен надати Координатору Програми подвійного диплому магістра домашнього університету таку інформацію:</value>
+  </data>
+  <data name="section4_step2_content5" xml:space="preserve">
+    <value>&lt;ol&gt;
+                         &lt;li&gt; Форма заяви (підписана вручну) &lt;/li&gt;
+                         &lt;li&gt; Тема магістерської роботи &lt;/li&gt;
+                         &lt;li&gt; Інформація про наукового керівника  (науковий ступінь, вчене звання, ім'я, телефон, електронна пошта) &lt;/li&gt;
+                         &lt;li&gt; Сканована копія диплому бакалавра (перший цикл) &lt;/li&gt;
+                         &lt;li&gt;Сканована копія додатку до диплома  &lt;/li&gt;
+                     &lt;/ ol&gt;</value>
+  </data>
+  <data name="section4_step2_title" xml:space="preserve">
+    <value>Крок 2. Вступ до Програми подвійного диплому магістра</value>
+  </data>
+  <data name="section4_step3_content1" xml:space="preserve">
+    <value>&lt;ul&gt;
+                         &lt;li&gt; Кандидат повинен бути обраний на конкурсній основі домашнього університету та відповідати вимогам приймальної комісії факультету. &lt;/li&gt;
+                         &lt;li&gt; Всі студенти будуть проінформовані про результати вибору Координатором програми &lt;/li&gt;
+                     &lt;/ ul&gt;</value>
+  </data>
+  <data name="section4_step3_title" xml:space="preserve">
+    <value>Крок 3.  Затвердження в домашньому університеті </value>
+  </data>
+  <data name="section4_step4_content1" xml:space="preserve">
+    <value>Для навчання в Познанському університеті технологій, необхідно пройти реєстрацію в онлайновій системі</value>
+  </data>
+  <data name="section4_step4_content2" xml:space="preserve">
+    <value>, для заповнення он-лайн анкети та завантажити наступні документи:</value>
+  </data>
+  <data name="section4_step4_content3" xml:space="preserve">
+    <value>                         &lt;li&gt; Форма заяви &lt;/li&gt;
+                         &lt;li&gt; Скан  паспорта &lt;/li&gt;
+                         &lt;li&gt; CV (необов'язково) &lt;/li&gt;
+                         &lt;li&gt; Скан диплому бакалавра (перший цикл навчання) перекладеного на англійську або польську мову (якщо мова документа відрізняється) &lt;/li&gt;
+                         &lt;li&gt; Диплом бакалавра - фотокопія, легалізована в посольстві / консульстві або апостильованому польському місті (на момент прибуття в ПУТ) &lt;/li&gt;
+                         &lt;li&gt; Скан додатка до диплому (стенограма записів), перекладена англійською або польською мовою (якщо мова документа відрізняється) &lt;/li&gt;
+                         &lt;li&gt; Скан відповідного мовного сертифіката B2 &lt;/li&gt;
+                         &lt;li&gt; Рекомендація від випускної кафедри (необов'язково) &lt;/li&gt;</value>
+  </data>
+  <data name="section4_step4_content4" xml:space="preserve">
+    <value>Реєстрація студента до партнерського університету (онлайн система </value>
+  </data>
+  <data name="section4_step4_content5" xml:space="preserve">
+    <value> повинна бути не пізніше кінця 1-го семестру.</value>
+  </data>
+  <data name="section4_step4_title" xml:space="preserve">
+    <value>Крок 4. Реєстрація в KSANTYPA</value>
+  </data>
+  <data name="section4_step5_content1" xml:space="preserve">
+    <value>На підставі отриманих документів приймаючий університет:</value>
+  </data>
+  <data name="section4_step5_content2" xml:space="preserve">
+    <value>&lt;li&gt; Перевіряє заявлені документи&lt;/li&gt;
+                         &lt;li&gt; Реєструє кандидата на Програму подвійного диплому магістра&lt;/li&gt;
+                         &lt;li&gt;
+                             Забезпечує кандидата в на навчання по програмі настуним:
+                             &lt;ul&gt;
+                                 &lt;li&gt; Надсилає запрошення на навчання &lt;/li&gt;
+                                 &lt;li&gt; Передає контакти координатора факультету, який відповідає за навчальний процес &lt;/li&gt;
+                                 &lt;li&gt; Разом з координатором факультету призначається науковий керівник магістерської роботи &lt;/li&gt;
+                                 &lt;li&gt; Надає перелік предметів для навчального процесу &lt;/li&gt;
+                                 &lt;li&gt; Погоджує проживання з приймаючим університетом умови проживання студента&lt;/li&gt;
+                             &lt;/ul&gt;
+                         &lt;/li&gt;</value>
+  </data>
+  <data name="section4_step5_title" xml:space="preserve">
+    <value>Крок 5. Затвердження в приймаючому університеті</value>
+  </data>
+  <data name="section4_step6_content1" xml:space="preserve">
+    <value>Після проведення оцінювання в домашньому та приймаючому університетах та отримання переліку предметів, студенти повинні:</value>
+  </data>
+  <data name="section4_step6_content2" xml:space="preserve">
+    <value>&lt;li&gt; Заповнити (і відправити до координаційного центру Програми подвійного диплому магістра) Угоду про начання з дисциплінами відповідно до зазначеного напряму навчання, затвердженого обома установами, з докладним описом програм та компетенцій, що будуть отримані протягом певного навчального курсу, виписку результатів оцінювання з останнього семестру в домашньому університеті, дати прибуття до та виїзду з приймаючого університету &lt;/ li&gt;
+                         &lt;li&gt; Зв'язатися з науковим керівником з приймаючого університету &lt;/ li&gt;
+                         &lt;li&gt; Подати заявку на отримання візи в посольстві &lt;/ li&gt;
+                         &lt;li&gt; Отримати документ медичного обстеження &lt;/ li&gt;</value>
+  </data>
+  <data name="section4_step6_title" xml:space="preserve">
+    <value>Крок 6. Після затвердження в домашньому та приймаючому університетах</value>
+  </data>
+  <data name="section4_step7_content1" xml:space="preserve">
+    <value>Вимоги до всіх студентів, які бажають навчатися за кордоном:</value>
+  </data>
+  <data name="section4_step7_content2" xml:space="preserve">
+    <value>Подати заявку на навчання у</value>
+  </data>
+  <data name="section4_step7_content3" xml:space="preserve">
+    <value>Відділ академічної мобільності</value>
+  </data>
+  <data name="section4_step7_content4" xml:space="preserve">
+    <value>&lt;li&gt; &lt;b&gt; Затвердити індивідуальний навчальний план на домашньому факультеті (з кінцевими датами здачі іспитів) &lt;/b&gt; &lt;/ li&gt;
+                         &lt;li&gt; &lt;b&gt; Затвердити дати від'їзду та прибуття до домашнього університету &lt;/b&gt; &lt;/li&gt;</value>
+  </data>
+  <data name="section4_step7_title" xml:space="preserve">
+    <value>Крок 7. Реєстрація в офісі відділу академічної мобільності</value>
+  </data>
+  <data name="section4_step8_content1" xml:space="preserve">
+    <value>(Положення 2.8) Для студентів, які навчаються: приймаюча установа повинна надати студентам відповідну "інформацію про прибуття" до моменту прибуття, включаючи інформацію про проїзд та в'їзд, витрати, які можуть бути понесені, та будь-яку іншу інформацію, яка допоможе студентам підготуватися до їх перебування в приймаючій установі.</value>
+  </data>
+  <data name="section4_step8_content2" xml:space="preserve">
+    <value>(Положення 2.8) прибуття студента в приймаючий університет: приймаюча установа організує та проводить комплексну програму орієнтації на місці.</value>
+  </data>
+  <data name="section4_step8_content3" xml:space="preserve">
+    <value>До кінця навчання в партнерському університеті студенти отримують виписку оцінок по дисциплінам за пройдений(і) семестр(и)</value>
+  </data>
+  <data name="section4_step8_title" xml:space="preserve">
+    <value>Крок 8. Подорож та навчання у партнерському університеті</value>
+  </data>
+  <data name="section4_step9_content1" xml:space="preserve">
+    <value>&lt;li&gt;
+                             Не забудьте повернутися в дмашній університет до дати кінцевої дати затвердженої в документах до від'їзду.
+                         &lt;/li&gt;
+                         &lt;li&gt;
+                             Зверніться до свого координатора після прибуття
+                         &lt;/li&gt;</value>
+  </data>
+  <data name="section4_step9_content2" xml:space="preserve">
+    <value>Надайте необхідні документи в деканат та </value>
+  </data>
+  <data name="section4_step9_content3" xml:space="preserve">
+    <value>Відділ академічної мобільності</value>
+  </data>
+  <data name="section4_step9_title" xml:space="preserve">
+    <value>Крок 9. Повернення до домашнього Університету</value>
+  </data>
+  <data name="section4_title" xml:space="preserve">
+    <value>Як працює програма?</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Інфо</value>
+  </data>
+</root>

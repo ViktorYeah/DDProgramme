@@ -1,0 +1,87 @@
+﻿@model DoubleMastersDegreeProgramme.ViewModels.CreateUserViewModel
+@{
+
+    ViewData["Title"] = "Add User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@ViewData["Title"]</h2>
+
+<!--Create User - template-->
+
+<form asp-action="Create" asp-controller="Users">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <br />
+    <div class="form-group row">
+        <label class="col-3" for="inputFirstName">First Name</label>
+        <input name="model.FirstName" required type="text" class="form-control col-9" id="inputFirstName" aria-describedby="firstNameHelp" placeholder="First Name">
+        <small id="firstNameHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputMiddleName">Middle Name</label>
+        <input name="model.MiddleName" type="text" class="form-control col-9" id="inputMiddleName" aria-describedby="middleNameHelp" placeholder="Middle Name">
+        <small id="middleNameHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputLastName">Last Name</label>
+        <input name="model.LastName" required type="text" class="form-control col-9" id="inputLastName" aria-describedby="lastNameHelp" placeholder="Last Name">
+        <small id="lastNameHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputBirthDate">Birth Date</label>
+        <input name="model.BirthDate" required type="date" class="form-control col-9" id="inputBirthDate" aria-describedby="birthDateHelp" placeholder="Birth Date">
+        <small id="birthDateHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputEmail">Email</label>
+        <input name="model.Email" required type="email" class="form-control col-9" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
+        <small id="emailHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputPhone">Phone</label>
+        <input name="model.PhoneNumber" required type="tel" class="form-control col-9" id="inputPhoneNumber" aria-describedby="phoneNumberHelp" placeholder="Phone Number">
+        <small id="phoneNumberHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="genderSelect">Gender</label>
+        <select name="model.Gender" typeof="Genders" required class="form-control col-9" id="genderSelect">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputDepartment">Department</label>
+        <input name="model.Department" required type="text" class="form-control col-9" id="inputDepartment" aria-describedby="departmentHelp" placeholder="Department">
+        <small id="departmentHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputChair">Chair</label>
+        <input name="model.Chair" required type="text" class="form-control col-9" id="inputChair" aria-describedby="chairHelp" placeholder="Chair">
+        <small id="chairHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputGroup">Group</label>
+        <input name="model.Group" required type="text" class="form-control col-9" id="inputGroup" aria-describedby="groupHelp" placeholder="Group">
+        <small id="groupHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputScientificSupervisor">Scientific Supervisor</label>
+        <input name="model.ScientificSupervisor" type="text" class="form-control col-9" id="inputScientificSupervisor" aria-describedby="scientificSupervisorHelp" placeholder="Scientific Supervisor">
+        <small id="scientificSupervisorHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputScientificSupervisor">Masters Project Title</label>
+        <input name="model.MastersProjectTitle" type="text" class="form-control col-9" id="inputMastersProjectTitle" aria-describedby="mastersProjectTitleHelp" placeholder="Masters Project Title">
+        <small id="mastersProjectTitleHelp" class="col-9 offset-3"> </small>
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputPassword">Password</label>
+        <input name="model.Password" required type="password" class="form-control col-9" id="inputPassword" placeholder="Password">
+    </div>
+    <div class="form-group row">
+        <label class="col-3" for="inputPasswordConfirm">Repeat Password</label>
+        <input name="model.PasswordConfirm" required type="password" class="form-control col-9 " id="inputPasswordConfirm" placeholder="Password Confirm">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<br />

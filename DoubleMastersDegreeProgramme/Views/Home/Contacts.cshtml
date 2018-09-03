@@ -1,0 +1,61 @@
+﻿@using System.Globalization;
+@using Microsoft.AspNetCore.Mvc
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="aldrich pt-3">@Localizer["Title"]</h2>
+
+<!--KPI Contacts-->
+<div class="pl-0 aldrich">
+    <b>@Localizer["kpi_title"]</b>
+    <ul style="list-style: none;">
+        <li class="pl-0 aldrich">@Localizer["kpi_address_street"]</li>
+        <li class="pl-0 aldrich">@Localizer["kpi_address_city"]</li>
+        <li class="pl-0 aldrich">@Localizer["kpi_address_office"]</li>
+    </ul>
+</div>
+<div class="pl-0 aldrich">
+    @Localizer["kpi_admin"]
+    <ul style="list-style: none;">
+        <li class="pl-0 aldrich">@Localizer["kpi_admin_name"]</li>
+        <li class="pl-0 aldrich">@Localizer["kpi_admin_email"]</li>
+        <li class="pl-0 aldrich">@Localizer["kpi_admin_phone"]</li>
+        <li ></li>
+        <li class="pl-0 aldrich">
+            <div class="flex-column w-auto pt-3 pl-0">
+                <iframe src="@Localizer["kpi_address_link"]" class="container-fluid pl-0" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </li>
+    </ul>
+</div>
+<hr />
+
+
+<!--PUT Contacts-->
+<div class="pl-0 aldrich">
+    <b>@Localizer["put_title"]</b>
+    <ul style="list-style: none;">
+        <li class="pl-0 aldrich">@Localizer["put_address_street"]</li>
+        <li class="pl-0 aldrich">@Localizer["put_address_city"]</li>
+        <li class="pl-0 aldrich">@Localizer["put_address_office"]</li> 
+    </ul>
+</div>
+<div class="pl-0 aldrich">
+    @Localizer["put_admin"]
+    <ul style="list-style: none;">
+        <li class="pl-0 aldrich">@Localizer["put_admin_name"]</li>
+        <li class="pl-0 aldrich">@Localizer["put_admin_email"]</li>
+        <li class="pl-0 aldrich">@Localizer["put_admin_phone"]</li>
+        <li></li>
+        <li class="pl-0 aldrich">
+            <div class="flex-column w-auto pt-3 pl-0">
+                <iframe src="@Localizer["put_address_link"]" class="container-fluid pl-0" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </li>
+    </ul>
+</div>
+
+

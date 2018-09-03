@@ -1,0 +1,270 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!--Section: About The Programme Page-->
+<div>
+    <div class="flex-column w-auto pt-4" id="about_programme">
+        <img class="img-fluid rounded shadow" src="~/images/banner_programme4.JPG" style="width:100%" alt="Double Master's Degree Programme" />
+    </div>
+    
+    <!--Page's Title-->
+    <h2 class="aldrich pt-3">@Localizer["Title"]</h2>
+    
+    <!--Section: The Programme-->
+    <h5 class="pt-3 pb-2"><b>@Localizer["section1_title"]</b></h5>
+    <div class="pb-3" style="text-align:justify">
+        <div>
+            @Localizer["section1_content1"]
+        </div>
+        <div>
+            @Localizer["section1_content2"]
+            <ul>
+                <li>@Localizer["section1_content3"]</li>
+                <li>@Localizer["section1_content4"]</li>
+            </ul>
+        </div>
+        
+        <!--Sub-section: Programme's History-->
+        <h5 class="pt-3 pb-2"><b>@Localizer["section1_content5"]</b></h5>
+        <ul>
+            @Localizer["section1_content6"]
+        </ul>
+    </div>
+</div>
+
+<!--Section About KPI-->
+<div>
+    <hr />
+    <div>
+        <div class="flex-column" id="about_kpi">
+            <img class="img-fluid rounded shadow" src="~/images/banner_kpi4.jpg" style="width:100%" alt="Igor Sikorsky KPI" />
+        </div>
+        <h5 class="pt-3"><b>@Localizer["section2_title"]</b></h5>
+        <br />
+        <div>
+            <div style="text-align:justify">@Localizer["section2_content1"]</div>
+            <div style="text-align: right">[<a href="http://kpi.ua/en/node/7302">kpi.ua</a>]</div>
+            <br />
+            <div style="text-align:justify">@Localizer["section2_content2"]</div>
+            <div style="text-align:justify">@Localizer["section2_content3"]</div>
+            <ul>
+                @Localizer["section2_content4"]
+            </ul>
+            <div>@Localizer["section2_content5"]</div>
+            <ul>
+                @Localizer["section2_content6"]
+            </ul>
+            <div style="text-align: right">[<a href="http://mmi.kpi.ua/en/">mmi.kpi.ua</a>]</div>
+        </div>
+    </div>
+</div>
+
+<!--Section About PUT-->
+<div>
+    <hr />
+    <div class="">
+        <div class="flex-column w-auto" id="about_put">
+            <img class="img-fluid rounded shadow" src="~/images/banner_put4.jpg" style="width:100%" alt="Poznan University of Technology" />
+        </div>
+        <h5 class="pt-3"><b>@Localizer["section3_title"]</b></h5>
+        <br />
+        <div style="text-align:justify">@Localizer["section3_content1"]</div>
+        <div style="text-align: right">[<a href="https://www.put.poznan.pl/en">put.poznan.pl</a>]</div>
+        <br />
+        <div style="text-align:justify">@Localizer["section3_content2"]</div>
+        <div style="text-align:justify">@Localizer["section3_content3"]</div>
+        <br />
+        <div>@Localizer["section3_content4"]</div>
+        <ul>
+            @Localizer["section3_content5"]
+        </ul>
+        <div style="text-align: right">[<a href="http://www.dmef.put.poznan.pl/en/">dmef.put.poznan.pl</a>]</div>
+        <br />
+        <div style="text-align:justify">@Localizer["section3_content6"]</div>
+        <div style="text-align:justify">@Localizer["section3_content7"]</div>
+        <br />
+        <div>@Localizer["section3_content8"]</div>
+        <ul>
+            @Localizer["section3_content9"]
+        </ul>
+        <div style="text-align: right">[<a href="http://www.fwmt.put.poznan.pl/">fwmt.put.poznan.pl</a>]</div>
+    </div>
+</div>
+
+<!--Section: How It Works-->
+<div>
+    <hr />
+    <div class="flex-column w-auto " id="about_how_it_works">
+        <img class="img-fluid rounded shadow" src="~/images/banner_how_it_work6.JPG" style="width:100%" alt="How does it work" />
+    </div>
+    <div class="pt-3">
+        <h5 class="pb-2"><b>@Localizer["section4_title"]</b></h5>
+    </div>
+    <div class="border border-primary rounded p-2">
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseRequirements" aria-expanded="false" aria-controls="collapseRequirements" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step1_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseRequirements">
+                <div class="card card-body">
+                    @Localizer["section4_step1_content"]
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseAdmission" aria-expanded="false" aria-controls="collapseAdmission" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step2_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseAdmission">
+                <div class="card card-body">
+                    <span class="pb-4">@Localizer["section4_step2_content1"]<a href=@Url.Action("Register", "Account") class="badge badge-dark">@Localizer["section4_step2_content2"]</a> @Localizer["section4_step2_content3"]</span>
+                    <span>@Localizer["section4_step2_content4"]</span>
+                    @Localizer["section4_step2_content5"]
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseSelection" aria-expanded="false" aria-controls="collapseSelection" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step3_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseSelection">
+                <div class="card card-body">
+                    @Localizer["section4_step3_content1"]
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseRegistration" aria-expanded="false" aria-controls="collapseRegistration" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step4_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseRegistration">
+                <div class="card card-body">
+                    <span>@Localizer["section4_step4_content1"]<a href="https://rekrutacja.put.poznan.pl/en/" target="_blank" class="badge badge-dark">KSANTYPA</a>@Localizer["section4_step4_content2"]</span>
+                    <ol>
+                        @Localizer["section4_step4_content3"]
+                    </ol>
+                    <i style="color:red">@Localizer["section4_step4_content4"]<a href="https://rekrutacja.put.poznan.pl/en/" target="_blank" class="badge badge-dark">KSANTYPA</a>)@Localizer["section4_step4_content5"]</i>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseHostAssesment" aria-expanded="false" aria-controls="collapseHostAssesment" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step5_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseHostAssesment">
+                <div class="card card-body">
+                    <span>@Localizer["section4_step5_content1"]</span>
+                    <ol>
+                        @Localizer["section4_step5_content2"]
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseAfterAssesment" aria-expanded="false" aria-controls="collapseAfterAssesment" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step6_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseAfterAssesment">
+                <div class="card card-body">
+                    <span>@Localizer["section4_step6_content1"]</span>
+                    <ol>
+                        @Localizer["section4_step6_content2"]
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseMobility" aria-expanded="false" aria-controls="collapseMobility" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step7_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseMobility">
+                <div class="card card-body">
+                    <span>@Localizer["section4_step7_content1"]</span>
+                    <ol>
+                        <li>@Localizer["section4_step7_content2"] <a href="http://mobilnist.kpi.ua/en/processing-documents-procedure/" target="_blank" class="badge badge-dark">@Localizer["section4_step7_content3"]</a></li>
+                        @Localizer["section4_step7_content4"]
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseTravelAndStudy" aria-expanded="false" aria-controls="collapseTravelAndStudy" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step8_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseTravelAndStudy">
+                <div class="card card-body">
+                    <ul>
+                        <li>
+                            @Localizer["section4_step8_content1"]
+                        </li>
+                        <li>
+                            @Localizer["section4_step8_content2"]
+                        </li>
+                        <li>
+                            @Localizer["section4_step8_content3"]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseReturn" aria-expanded="false" aria-controls="collapseReturn" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step9_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseReturn">
+                <div class="card card-body">
+                    <ul>
+                        @Localizer["section4_step9_content1"]
+                        <li>
+                            @Localizer["section4_step9_content2"]<a href="http://mobilnist.kpi.ua/en/processing-documents-procedure/" target="_blank" class="badge badge-dark">@Localizer["section4_step9_content3"]</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <div class="container-fluid rounded pt-1" type="button" data-toggle="collapse" data-target="#collapseEnd" aria-expanded="false" aria-controls="collapseEnd" style="text-align:left; height:auto; text-wrap:normal; background-color:#f0f0f0">
+                    <label>@Localizer["section4_step10_title"]</label>
+                </div>
+            </p>
+            <div class="collapse pb-2" id="collapseEnd">
+                <div class="card card-body">
+                    <ol>
+                        <li>
+                            @Localizer["section4_step10_content1"]
+                        </li>
+                        <li>
+                            @Localizer["section4_step10_content2"]
+                            <ul>
+                                <li>@Localizer["section4_step10_content3"] (<a href="@Url.Action("About", "Home")#about_put" id="putLink"><label for="putLink" class="bg-dark rounded" style="text-wrap:normal; color:white;"> @Localizer["section4_step10_content4"]</label></a>)</li>
+                                <li>@Localizer["section4_step10_content5"] (<a href="@Url.Action("About", "Home")#about_kpi" id="kpiLink"><label for="kpiLink" class="bg-dark rounded" style="text-wrap:normal; color:white;"> @Localizer["section4_step10_content6"]</label></a>)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
